@@ -10,6 +10,17 @@ namespace teh6
     {
         static void Main(string[] args)
         {
+            double matka, litra, hinta;
+
+            Console.Write("Anna ajettu matka: ");
+            matka = double.Parse(Console.ReadLine());
+
+            litra = matka / 100 * 7.02;
+            hinta = litra * 1.595;
+
+            Console.WriteLine("Bensaa kuluu " + litra);
+            Console.WriteLine("Kustannus " + hinta);
+
         }
     }
 }
